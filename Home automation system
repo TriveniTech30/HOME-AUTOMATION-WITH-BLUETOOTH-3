@@ -1,0 +1,43 @@
+char data =0;
+void setup()
+{
+  pinMode(8, OUTPUT);
+  pinMode(9,OUTPUT);
+  Serial.begin(9600);
+  Serial.print("HOME AUTOMATION SYSTEM ");
+  Serial.println
+   (" Commands:1=Light ON,2=Light OFF,3=Bell ON ,4=Bell OFF");
+     }
+  void loop() 
+  {
+       if (Serial.available()>0)
+       {
+         data =Serial.read();
+         if (data =='\n'||data =='\r')return;
+         
+         if (data=='1'){
+           digitalWrite(8,HIGH);
+           Serial.println(">>Light:ON");
+         }
+         else if (data =='2')
+         {
+           digitalWrite(8,LOW);
+           Serial.println(">>Light:OFF");
+         }
+         else if (data =='3'){
+           digitalWrite(9,HIGH);
+           Serial.println(">>bell:ON)");
+         }
+         else if (data =='4'){
+           digitalWrite(9,LOW);
+           Serial.println(">>bell:OFF");
+         }
+           else 
+           {
+             Serial.print(">>ERROR:");
+             Serial.print(data);
+             Serial.print("is an invalid Command!");
+           }
+         }
+       }
+       
