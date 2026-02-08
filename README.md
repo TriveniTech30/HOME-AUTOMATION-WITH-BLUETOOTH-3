@@ -24,6 +24,9 @@ Security is another important part of home automation. In Tinkercad, a PIR motio
 
 Programming is done using the Arduino IDE inside Tinkercad. Users write simple C/C++ code to read sensor values and control outputs. For beginners, Tinkercad also offers a block-based coding option, which makes it easier to understand logic without deep programming knowledge. The simulation runs in real time, allowing users to test and debug their system.
 
+#OUTPUT
+<img width="1919" height="918" alt="Image" src="https://github.com/user-attachments/assets/43e5e2e8-0a99-4c10-876b-27a26188b338" />
+
 One major advantage of using Tinkercad is that it encourages experimentation and learning. Students can try different circuits, change code, and instantly see results. There is no risk of damaging components, and no need to buy hardware. It also helps in understanding how real smart home systems work before building them physically.
 
 Overall, a home automation system on Tinkercad is an excellent educational project. It teaches electronics, programming, and problem-solving skills. It also introduces the concept of the Internet of Things (IoT), where devices communicate and work together to make homes smarter. By building such projects, students gain practical knowledge that can be used in real-world applications and future technology careers.
